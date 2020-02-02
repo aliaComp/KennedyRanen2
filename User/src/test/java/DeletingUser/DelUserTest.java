@@ -36,7 +36,7 @@ public class DelUserTest {
         alert.accept();
         Thread.sleep(3000);
         List<WebElement> users = driver.findElements(By.cssSelector("ul#user-list li"));
-        boolean switcher = false;
+        boolean switcher = true;
         for (WebElement user: users){
             if (user.findElement(By.cssSelector("h4")).getText().equals("John Kennedy")) {
                 user.findElement(By.cssSelector("p")).getText().equals("9379992");
